@@ -195,7 +195,10 @@ button:active{
 }
 
 .about-container img{
+
 	height: 250px;
+	mix-blend-mode: multiply;
+
 
 }
 
@@ -530,4 +533,163 @@ footer p:nth-child(1){
 	border: none;
 	font-size: 14px;
 	font-weight: bold;
+}
+
+
+/*skills*/
+
+
+#skills{
+
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto auto 50px auto;
+	color: #C0C0C0;
+
+}
+
+.skills-text-section{
+	width: 400px;
+
+}
+
+.skills-heading span{
+	color: #416cdf;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
+
+
+}
+
+.skills-heading h2{
+
+	color: #000000;
+	font-size: 3.3rem;
+	margin: 0px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.s-box-container{
+	margin-top: 30px;
+
+}
+.skill-box{
+	display: flex;
+	margin: 25px 0px;
+
+}
+
+.s-box-icon{
+
+	margin-right: 12px;
+}
+.s-box-icon i{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f0f011;
+	font-size: 1.1rem;
+
+}
+.skill-box strong{
+
+	color: #000000;
+	margin: 0px;
+	font-weight: 400;
+	font-size: 0.9rem;
+
+}
+.skill-box p{
+	color: #424242;
+	font-size: 0.9rem;
+
+}
+.fa-html5{
+	color: #e22e5d;
+}
+.fa-css3-alt{
+	color: #0000FF;
+}
+.fa-php{
+	color: #000000;
+}
+.progress-line{
+	position: relative;
+	height: 5px;
+	width: 100%;
+	background-color: #6289ff;
+	border-radius: 10px;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(54, 54, 54, 0.8);
+
+}
+.progress-line span{
+
+
+	height: 100%;
+
+	background: linear-gradient(90deg, #2788e2 20%, #3b43b8);
+	position: absolute;
+	border-radius: 10px;
+}
+.progress-line.html span{
+	width: 80%;
+
+}
+.progress-line.css span{
+	width: 90%;
+
+}
+.progress-line.php span{
+	width: 75%;
+
+}
+.progress-line span::before{
+	position: absolute;
+	content: '';
+	right: 0px;
+	top: -10px;
+	height: 0px;
+	width: 0px;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: rgb(20, 98, 243);
+}
+.progress-line span::after{
+
+	position: absolute;
+	right: 0px;
+	top: -28px;
+	color: #000000;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: rgb(20, 98, 243);
+	padding: 1px 8px;
+	border-radius: 3px;
+
+}
+.progress-line.html span::after{
+
+	content: '80%';
+}
+.progress-line.css span::after{
+
+	content: '90%';
+}
+.progress-line.php span::after{
+
+	content: '75%';
+}
+
+.skill-img img{
+
+	border-radius: 10%;
+	mix-blend-mode: multiply;
 }
